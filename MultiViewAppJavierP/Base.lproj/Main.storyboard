@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiViewAppJavierP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +23,209 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muk-SS-113">
+                                <rect key="frame" x="49" y="318" width="47" height="30"/>
+                                <state key="normal" title="Cichlid"/>
+                                <connections>
+                                    <segue destination="HbB-FX-ziL" kind="presentation" modalTransitionStyle="flipHorizontal" id="A3w-oL-R1j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-MJ-Qvi">
+                                <rect key="frame" x="169" y="318" width="36" height="30"/>
+                                <state key="normal" title="Tetra"/>
+                                <connections>
+                                    <segue destination="Fg1-4M-Eoe" kind="presentation" id="vej-Ak-Led"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A_diamond_tetra_fish" translatesAutoresizingMaskIntoConstraints="NO" id="myl-fg-TIS">
+                                <rect key="frame" x="146" y="232" width="82" height="69"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish-774785_1280" translatesAutoresizingMaskIntoConstraints="NO" id="asp-Hc-Ypz">
+                                <rect key="frame" x="31" y="232" width="82" height="69"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koi-fish-984326_1280" translatesAutoresizingMaskIntoConstraints="NO" id="xqx-bQ-c4f">
+                                <rect key="frame" x="271" y="232" width="82" height="69"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-bD-ajz">
+                                <rect key="frame" x="275" y="318" width="74" height="30"/>
+                                <state key="normal" title="Asian Fish "/>
+                                <connections>
+                                    <segue destination="ZtN-Tp-kld" kind="presentation" id="F6M-WQ-3bm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="centerX" secondItem="muk-SS-113" secondAttribute="centerX" id="00m-eH-uMg"/>
+                            <constraint firstItem="muk-SS-113" firstAttribute="top" secondItem="Rqv-MJ-Qvi" secondAttribute="top" id="2J7-J5-Dip"/>
+                            <constraint firstItem="myl-fg-TIS" firstAttribute="centerX" secondItem="Rqv-MJ-Qvi" secondAttribute="centerX" id="3Rq-wm-vhu"/>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="top" secondItem="myl-fg-TIS" secondAttribute="top" id="3qj-Wm-bhn"/>
+                            <constraint firstItem="pAY-bD-ajz" firstAttribute="leading" secondItem="Rqv-MJ-Qvi" secondAttribute="trailing" constant="70" id="6rC-6c-bZB"/>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="212" id="In4-q1-rM4"/>
+                            <constraint firstItem="myl-fg-TIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JOi-Ta-UST"/>
+                            <constraint firstItem="Rqv-MJ-Qvi" firstAttribute="baseline" secondItem="pAY-bD-ajz" secondAttribute="baseline" id="RMx-PE-1RT"/>
+                            <constraint firstItem="myl-fg-TIS" firstAttribute="top" secondItem="xqx-bQ-c4f" secondAttribute="top" id="Xsp-ai-xtq"/>
+                            <constraint firstItem="xqx-bQ-c4f" firstAttribute="leading" secondItem="myl-fg-TIS" secondAttribute="trailing" constant="43" id="cwX-q3-ta7"/>
+                            <constraint firstItem="myl-fg-TIS" firstAttribute="bottom" secondItem="xqx-bQ-c4f" secondAttribute="bottom" id="ezs-CA-fop"/>
+                            <constraint firstItem="xqx-bQ-c4f" firstAttribute="centerX" secondItem="pAY-bD-ajz" secondAttribute="centerX" id="gUp-IN-hq4"/>
+                            <constraint firstItem="muk-SS-113" firstAttribute="baseline" secondItem="Rqv-MJ-Qvi" secondAttribute="firstBaseline" id="hat-wU-bTA"/>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="hrs-qm-jBa"/>
+                            <constraint firstItem="muk-SS-113" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i2Q-8h-FrP"/>
+                            <constraint firstItem="Rqv-MJ-Qvi" firstAttribute="baseline" secondItem="muk-SS-113" secondAttribute="firstBaseline" id="oBy-5v-gj5"/>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="bottom" secondItem="myl-fg-TIS" secondAttribute="bottom" id="of0-pA-R5Q"/>
+                            <constraint firstItem="muk-SS-113" firstAttribute="top" secondItem="asp-Hc-Ypz" secondAttribute="bottom" constant="17" id="pFT-fx-7cG"/>
+                            <constraint firstItem="myl-fg-TIS" firstAttribute="leading" secondItem="asp-Hc-Ypz" secondAttribute="trailing" constant="33" id="tUr-xX-lfS"/>
+                            <constraint firstItem="asp-Hc-Ypz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="212" id="tnl-tW-EAt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xqx-bQ-c4f" secondAttribute="trailing" constant="6" id="uAj-5C-eAs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VUV-85-4Ww">
+            <objects>
+                <viewController id="HbB-FX-ziL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4LV-Ob-4Ey"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zks-3Z-lhJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cwf-4T-U86">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qe-db-iY4">
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-3S-m4l">
+                                <rect key="frame" x="41" y="318" width="47" height="30"/>
+                                <state key="normal" title="Malawi"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClS-nr-rln">
+                                <rect key="frame" x="150" y="318" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Victoria"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On1-lg-HgW">
+                                <rect key="frame" x="266" y="318" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tanganyika"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your Lake " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vje-jZ-66r">
+                                <rect key="frame" x="105" y="28" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lake-victoria-2108871_640" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-lf-q3o">
+                                <rect key="frame" x="67" y="115" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Qe-db-iY4" firstAttribute="leading" secondItem="cwf-4T-U86" secondAttribute="leadingMargin" id="Pdf-RF-qCw"/>
+                            <constraint firstItem="1Qe-db-iY4" firstAttribute="top" secondItem="9aL-3S-m4l" secondAttribute="bottom" constant="269" id="oiA-wN-buQ"/>
+                            <constraint firstItem="Zks-3Z-lhJ" firstAttribute="top" secondItem="1Qe-db-iY4" secondAttribute="bottom" constant="20" id="rBJ-Xh-5BY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ic-AT-xUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693.60000000000002" y="-686.80659670164926"/>
+        </scene>
+        <!--Tetra View Controller-->
+        <scene sceneID="n4U-2N-A1j">
+            <objects>
+                <viewController id="Fg1-4M-Eoe" customClass="TetraViewController" customModule="MultiViewAppJavierP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="avp-qW-HpV"/>
+                        <viewControllerLayoutGuide type="bottom" id="FGg-hT-U1G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kff-KY-buG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4d-Na-W8a">
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back" destination="Fg1-4M-Eoe" eventType="touchUpInside" id="tUu-ug-gyb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A_diamond_tetra_fish" translatesAutoresizingMaskIntoConstraints="NO" id="HYE-8K-kx8">
+                                <rect key="frame" x="117" y="50" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Paracheirodon_axelrodi" translatesAutoresizingMaskIntoConstraints="NO" id="6tw-hX-uea">
+                                <rect key="frame" x="117" y="236" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC8-19-bhn">
+                                <rect key="frame" x="139" y="184" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Diamon Tetra "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-15-DJM">
+                                <rect key="frame" x="139" y="372" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cardinal Tetra"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGY-vp-b9e">
+                                <rect key="frame" x="131" y="550" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blind Cave Tetra"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mexican_Tetra_as_Blind_Cave_Fish" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-4m-JV1">
+                                <rect key="frame" x="117" y="414" width="140" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GY-Ap-Jaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693.60000000000002" y="-27.436281859070466"/>
+        </scene>
+        <!--Asian Fish View Controller-->
+        <scene sceneID="6Nx-gY-6ys">
+            <objects>
+                <viewController id="ZtN-Tp-kld" customClass="AsianFishViewController" customModule="MultiViewAppJavierP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcS-gU-vUK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ta0-nz-2tP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dq2-yw-POT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjx-Cr-KFC">
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HxO-m9-fsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="617"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="A_diamond_tetra_fish" width="128" height="85"/>
+        <image name="Mexican_Tetra_as_Blind_Cave_Fish" width="682" height="333"/>
+        <image name="Paracheirodon_axelrodi" width="680" height="344"/>
+        <image name="fish-774785_1280" width="1203" height="1280"/>
+        <image name="koi-fish-984326_1280" width="1280" height="853"/>
+        <image name="lake-victoria-2108871_640" width="640" height="425"/>
+    </resources>
 </document>

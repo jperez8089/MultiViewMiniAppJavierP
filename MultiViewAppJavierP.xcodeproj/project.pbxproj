@@ -14,6 +14,9 @@
 		4B18A8132059AFA2001D213C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B18A8112059AFA2001D213C /* LaunchScreen.storyboard */; };
 		4B18A81E2059AFA2001D213C /* MultiViewAppJavierPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A81D2059AFA2001D213C /* MultiViewAppJavierPTests.swift */; };
 		4B18A8292059AFA2001D213C /* MultiViewAppJavierPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A8282059AFA2001D213C /* MultiViewAppJavierPUITests.swift */; };
+		4B18A8372059AFE6001D213C /* CichlidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A8362059AFE6001D213C /* CichlidViewController.swift */; };
+		4B18A8392059B194001D213C /* TetraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A8382059B194001D213C /* TetraViewController.swift */; };
+		4B18A83B2059B1A4001D213C /* AsianFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18A83A2059B1A4001D213C /* AsianFishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4B18A8242059AFA2001D213C /* MultiViewAppJavierPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiViewAppJavierPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B18A8282059AFA2001D213C /* MultiViewAppJavierPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiViewAppJavierPUITests.swift; sourceTree = "<group>"; };
 		4B18A82A2059AFA2001D213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B18A8362059AFE6001D213C /* CichlidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CichlidViewController.swift; sourceTree = "<group>"; };
+		4B18A8382059B194001D213C /* TetraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetraViewController.swift; sourceTree = "<group>"; };
+		4B18A83A2059B1A4001D213C /* AsianFishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsianFishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +106,12 @@
 				4B18A8082059AFA2001D213C /* AppDelegate.swift */,
 				4B18A80A2059AFA2001D213C /* ViewController.swift */,
 				4B18A80C2059AFA2001D213C /* Main.storyboard */,
+				4B18A8382059B194001D213C /* TetraViewController.swift */,
+				4B18A83A2059B1A4001D213C /* AsianFishViewController.swift */,
 				4B18A80F2059AFA2001D213C /* Assets.xcassets */,
 				4B18A8112059AFA2001D213C /* LaunchScreen.storyboard */,
 				4B18A8142059AFA2001D213C /* Info.plist */,
+				4B18A8362059AFE6001D213C /* CichlidViewController.swift */,
 			);
 			path = MultiViewAppJavierP;
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B18A80B2059AFA2001D213C /* ViewController.swift in Sources */,
+				4B18A8372059AFE6001D213C /* CichlidViewController.swift in Sources */,
 				4B18A8092059AFA2001D213C /* AppDelegate.swift in Sources */,
+				4B18A8392059B194001D213C /* TetraViewController.swift in Sources */,
+				4B18A83B2059B1A4001D213C /* AsianFishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
