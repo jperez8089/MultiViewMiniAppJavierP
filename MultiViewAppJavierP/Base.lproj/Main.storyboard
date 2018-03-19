@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,30 +24,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muk-SS-113">
-                                <rect key="frame" x="49" y="318" width="47" height="30"/>
+                                <rect key="frame" x="49.5" y="318" width="47" height="30"/>
                                 <state key="normal" title="Cichlid"/>
                                 <connections>
                                     <segue destination="HbB-FX-ziL" kind="presentation" modalTransitionStyle="flipHorizontal" id="A3w-oL-R1j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-MJ-Qvi">
-                                <rect key="frame" x="169" y="318" width="36" height="30"/>
+                                <rect key="frame" x="169.5" y="318" width="35" height="30"/>
                                 <state key="normal" title="Tetra"/>
                                 <connections>
                                     <segue destination="Fg1-4M-Eoe" kind="presentation" id="vej-Ak-Led"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A_diamond_tetra_fish" translatesAutoresizingMaskIntoConstraints="NO" id="myl-fg-TIS">
-                                <rect key="frame" x="146" y="232" width="82" height="69"/>
+                                <rect key="frame" x="147" y="232" width="80" height="69"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish-774785_1280" translatesAutoresizingMaskIntoConstraints="NO" id="asp-Hc-Ypz">
-                                <rect key="frame" x="31" y="232" width="82" height="69"/>
+                                <rect key="frame" x="31" y="232" width="83" height="69"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koi-fish-984326_1280" translatesAutoresizingMaskIntoConstraints="NO" id="xqx-bQ-c4f">
-                                <rect key="frame" x="271" y="232" width="82" height="69"/>
+                                <rect key="frame" x="270" y="232" width="83" height="69"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-bD-ajz">
-                                <rect key="frame" x="275" y="318" width="74" height="30"/>
+                                <rect key="frame" x="274.5" y="318" width="74" height="30"/>
                                 <state key="normal" title="Asian Fish "/>
                                 <connections>
                                     <segue destination="ZtN-Tp-kld" kind="presentation" id="F6M-WQ-3bm"/>
@@ -85,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
-        <!--View Controller-->
+        <!--Cichlid View Controller-->
         <scene sceneID="VUV-85-4Ww">
             <objects>
-                <viewController id="HbB-FX-ziL" sceneMemberID="viewController">
+                <viewController id="HbB-FX-ziL" customClass="CichlidViewController" customModule="MultiViewAppJavierP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4LV-Ob-4Ey"/>
                         <viewControllerLayoutGuide type="bottom" id="Zks-3Z-lhJ"/>
@@ -97,10 +96,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qe-db-iY4">
-                                <rect key="frame" x="16" y="617" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-3S-m4l">
                                 <rect key="frame" x="41" y="318" width="47" height="30"/>
                                 <state key="normal" title="Malawi"/>
@@ -126,6 +121,13 @@
                                 <rect key="frame" x="67" y="115" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qe-db-iY4">
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back" destination="HbB-FX-ziL" eventType="touchUpInside" id="gNt-hI-6bz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -210,6 +212,9 @@
                                 <rect key="frame" x="16" y="617" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back" destination="ZtN-Tp-kld" eventType="touchUpInside" id="hDA-ig-cP1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -9,6 +9,15 @@
 import UIKit
 
 class CichlidViewController: UIViewController {
+    
+    @IBAction func back(){
+        
+        dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
